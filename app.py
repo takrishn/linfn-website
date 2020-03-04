@@ -7,4 +7,4 @@ Scss(app, static_dir='static', asset_dir='assets')
 def hello():       
     return render_template('index.html')
 if __name__ == "__main__":        # on running python app.py
-    app.run() 
+    app.run(debug=True) 

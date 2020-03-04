@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="{{ url_for('static', filename='/css/index.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     </head>
     <body>
         <div class="wrapper">
@@ -13,6 +14,7 @@
                     <input type="text" placeholder="Text">
                     <button type="submit" id="login-button">Submit</button>
                 </form>
+                <p id=result>hello</p>
             </div>
             
             <ul class="bg-bubbles">
@@ -35,8 +37,8 @@
 $("#login-button").click(function(event){
     event.preventDefault();
 
-$('form').fadeOut(500);
-$('.wrapper').addClass('form-success');
+    $('#result').fadeIn(500);
+    $('.wrapper').addClass('form-success');
 });
 </script>
 
