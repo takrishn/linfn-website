@@ -1,5 +1,7 @@
 from flask import Flask, render_template
-app = Flask(__name__)     
+from flask_scss import Scss
+app = Flask(__name__)    
+Scss(app, static_dir='static', asset_dir='assets') 
 
 @app.route("/")                   # at the end point /
 def hello():       
